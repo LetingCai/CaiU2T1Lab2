@@ -19,21 +19,19 @@ public class Rectangle {
 
     // method that calculates and prints area
     public void printArea() {
-        int area = length * width;
-        System.out.println("My area is " + area);
+        System.out.println("My area is " + calculateArea());
     }
 
     // method that calculates and returns volume
     // of a box with length, width, and height
     public double calculateBoxVolume(double height) {
-        return length * width * height;
+        return calculateArea()* height;
     }
 
     // method that calculates and prints volume
     // of a box with length, width, and height
     public void printBoxVolume(double height) {
-        double volume = length * width * height;
-        System.out.println("The volume is: " + volume);
+        System.out.println("The volume is: " + calculateArea()*height);
     }
 }
 
